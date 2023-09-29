@@ -9,7 +9,7 @@ app.get('/hello', (req, res) => {
 });
 
 app.get('/budget', (req, res) => {
-    res.sendFile("C:\\Users\\sneha\\Documents\\NBAD\\personal-budget\\personal-budget.json");
+    res.sendFile("personal-budget.json");
 })
 
 app.listen(port, () => {
