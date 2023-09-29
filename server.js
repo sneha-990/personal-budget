@@ -9,7 +9,7 @@ app.get('/hello', (req, res) => {
 });
 
 app.get('/budget', (req, res) => {
-    res.sendFile("personal-budget.json");
+    res.sendFile("personal-budget.json", { root: '.'});
 })
 
 app.listen(port, () => {
